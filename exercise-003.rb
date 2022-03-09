@@ -1,4 +1,4 @@
-def palindrome(word)
+def palindrome?(word)
 	index = 0
 	word.split("").each do |char|
 		if char.downcase != word[word.length - 1 - index].downcase
@@ -9,5 +9,5 @@ def palindrome(word)
 	return true
 end
 
-puts palindrome("racecar")
-puts palindrome("wagon")
+puts palindrome?("racecar")
+puts palindrome?("wagon")
